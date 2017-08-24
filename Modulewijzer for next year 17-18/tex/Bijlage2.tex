@@ -1,19 +1,9 @@
-\section*{Attachment 2: Practical examination}
+\section*{Attachment 1: Practical examination}
 
 \subsection*{General (important) information}
 \begin{itemize}
-\item The assignment is individual.
 \item The assignment must be implemented using C\# or F\#.
-%\item Not delivering the assignment in time implies taking the exam at the retake.
 \item The only library tools you are allowed to use are: arrays, lists, and math functions. Other data structures or functions on data structures covered by the course must be implemented \textbf{by hand}.
-\item There will be a \textbf{practical assessment} on the content of the assignment. During this assessment the teachers reserve the right to ask the students questions concerning the practical assignments and what has been developed during the assessment itself.
-\item The grade is given by the sum of the grades obtained in each exercise, plus 1.
-\item \textbf{Deadlines and delivery}
-\begin{itemize}
-\item Each exercise has a (strongly) suggested deadline.
-\item You must use \textit{Github} and do frequent commits. The amount/time of the Github commits \textit{could} be checked by the teachers and considered as grading evidence, for example in case of a borderline grade.
-\item By the \textit{end of week 7}, you must upload your project on \textit{N@tschool} (through the ``inleveropdracht").
-\end{itemize}
 \end{itemize}
 
 \subsection*{Introduction to the framework}
@@ -21,7 +11,7 @@ The exercises will be based on the simulation of a city, containing houses and s
 To set up the framework, follow these instructions:
 
 \begin{itemize}
-\item Download and install Visual Studio 2015 Community (\url{https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx}); choose ``F\# language" during \textit{custom setup}; 
+\item Download and install the latest version of Visual Studio Community (\url{https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx}); choose ``F\# language" during \textit{custom setup}; 
 \item Download the project framework from N@tschool (or Github) and open the .sln file; if it is not already set, right click on \texttt{EntryPoint} project (in the solution explorer) and select ``Set as startup project";
 \item The functions you have to program are contained in the file \texttt{Program.cs}; for now there are stub versions of the function implementations that you have to replace with yours;
 \item Compile the project in debug mode and run it with Ctrl+F5;
@@ -32,10 +22,7 @@ To set up the framework, follow these instructions:
 
 \newpage
 \subsection*{Exercise 1 - Sorting}
-
-\textbf{Suggested deadline}: End week 3. \\
 \textbf{Learning goal}: \texttt{SORT}\textsuperscript{I}. \\
-\textbf{Points}: 3.
 
 \subsubsection*{Goal}
 Sort all special buildings by Euclidean distance from a specified house. The Euclidean distance formula is:
@@ -63,9 +50,7 @@ As you can see from Figure \ref{img:Ex1}, the selected house is highlighted and 
 
 \newpage
 \subsection*{Exercise 2 - Trees}
-\textbf{Suggested deadline}: End week 5. \\
 \textbf{Learning goal}: \texttt{REC}\textsuperscript{I}. \\
-\textbf{Points}: 3.
 
 \subsubsection*{Goal}
 Find all the special buildings within a specified distance from each house. Create a \textbf{k-d tree} to organize the special buildings positions in advance (like explained in class). Then look up the tree for each of the requested houses (with the associated distance).
@@ -90,13 +75,11 @@ As you can see from Figure \ref{img:Ex2}, each selected house is surrounded by a
 
 \newpage
 \subsection*{Exercise 3 - Graphs}
-\textbf{Suggested deadline}: End week 7. \\
 \textbf{Learning goal}: \texttt{GRAPH}\textsuperscript{I}. \\
-\textbf{Points}: 3.
 
 \subsubsection*{Goal}
 Find the shortest path(s) from a specified house to other special building(s). The shortest path is made of the road sections to use in order to drive from the house to the special building.\\
-\textbf{Remark}: For this assignment \underline{only}, you can choose between two different implementations (Dijkstra or Floyd Warshall).\\
+\textbf{Remark}: This assignment can be solved in two ways, that is using Dijkstra or Floyd Warshall.\\
 \textbf{Hint:} In both assignments, you have to build the adjacency matrix using the starting point and endpoint of the road sections. The weight of the edge is the distance between the two points.
 
 \subsection*{Option 1: Dijkstra}
