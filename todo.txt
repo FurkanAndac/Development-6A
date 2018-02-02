@@ -1,2 +1,1 @@
-- Add in the slides the implementation exercises.
-- Add practicum about immutable lists.
+https://visualgo.net/en
